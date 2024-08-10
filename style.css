@@ -1,0 +1,20 @@
+* {
+    display: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+}
+
+.profile-container > img {
+    width: 100%;
+}
+
+header .background {
+    background-color: rgb(37, 0, 85);
+}
