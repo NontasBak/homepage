@@ -215,10 +215,10 @@ footer .contact-container img {
     .profile-container-small {
         display: block;
         float: left;
-        width: 50%;
+        width: 60%;
         position: relative;
         transform-origin: bottom right;
-        transform: scale(1.15) translateX(-0.5rem);
+        transform: scale(1.07) translate(-0.5rem, -0.5rem);
     }
 
     .profile-container-small img {
@@ -243,7 +243,7 @@ footer .contact-container img {
     .about-me-container {
         display: block;
         width: 100%;
-        transform: translate(1.5rem, 1.5rem);
+        /* transform: translate(1.5rem, 1.5rem); */
         /* height: 30rem; */
     }
 
