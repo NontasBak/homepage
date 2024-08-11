@@ -48,6 +48,10 @@ header {
     margin: 2rem;
 }
 
+.profile-container-small {
+    display: none;
+}
+
 .profile-container {
     width: 40%;
     position: relative;
@@ -199,19 +203,70 @@ footer .contact-container img {
     width: 2rem;
 }
 
-@media (max-width: 960px) {
+@media (641px <= width <= 900px) {
     header {
         display: block;
     }
 
-    header .profile-container {
-        float: left;
+    .profile-container {
+        display: none;
     }
 
-    /* header .about-me-container {
-        float: right;
-        width: 80%;
-    } */
+    .profile-container-small {
+        display: block;
+        float: left;
+        width: 50%;
+        position: relative;
+        transform-origin: bottom right;
+        transform: scale(1.15) translateX(-0.5rem);
+    }
+
+    .profile-container-small img {
+        width: 100%;
+    }
+
+    .profile-container-small .name {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        color: white;
+        font-weight: 200;
+        font-size: 4rem;
+    }
+
+    .about-me {
+        width: 100%;
+    }
+
+    .about-me-container {
+        display: block;
+        width: 100%;
+        transform: translate(1.5rem, 1.5rem);
+        /* height: 30rem; */
+    }
+
+    .about-me-container > *:not(.profile-container-small) {
+        padding: 1rem 0.5rem;
+        transform-origin: top left;
+        transform: translate(0.3rem, 0.3rem);
+    }
+
+    .about-me-container .about-me {
+        font-size: 3rem;
+        margin: -1rem;
+    }
+
+    .about-me-container .details {
+        font-size: 1.5rem;
+    }
+
+    .about-me-container .icons {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
 }
 
 @media (max-width: 640px) {
