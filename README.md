@@ -1,2 +1,4 @@
 # homepage
-Responsive homepage using plain HTML and CSS
+Responsive homepage using media queries
+
+[View it here](https://nontasbak.github.io/homepage/)
